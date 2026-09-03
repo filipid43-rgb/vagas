@@ -1,4 +1,3 @@
-// ===== DADOS DAS VAGAS =====
 const jobs = [
   {
     company: "Linear",
