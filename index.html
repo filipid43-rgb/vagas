@@ -1,182 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenBoard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="scriptsheet" href="script.js">
 </head>
+
 <body>
-     <header>
+
+    <header>
         <h1>OpenBoard</h1>
-<div>
-        <a href="">Entrar</a>
-         <button class="btn">Publicar Vaga - $299</button>
-</div>
-</header>
+        <div>
+            <a href="">Entrar</a>
+            <button class="btn">Publicar Vaga - $299</button>
+        </div>
+    </header>
 
-<section class ="hero">
-    <h2>As melhores vagas em startups de tecnologia</h2>
-    <p>Encontre oportunidades reais em empresas curadas. Sem cadastro, sem barreira</p>
-    <button class="cta btn">Publicar Vaga - $299</button>
+    <section class="hero">
+        <h2>As melhores vagas em startups de tecnologia</h2>
+        <p>Encontre oportunidades reais em empresas curadas. Sem cadastro, sem barreiras</p>
+        <button class="btn cta">Publicar Vaga - $299</button>
+    </section>
 
-</section>
-    
-<div class="conteudo">
-<main>
-    <div class="conteudo__header">   
-<h2>Últimas vagas</h2>
-<span>7 vagas - atualizado agora</span>
-</div>
-  
+    <div class="conteudo">
+        <main>
+            <div class="conteudo__header">
+                <h2>Últimas vagas</h2>
+                <span>7 vagas - atualizado agora</span>
+            </div>
 
-<div>
-    <img src="" alt="logo">
-<p>Vercel</p> 
-Vercel
-<h3>Full-stack Engneer</h3>
-<span>R$20k - R$30k</span>
-<span>Remoto</span>
-<span>2h</span>
-<a href="">Candidarta-se</a>
-</div>
+            <div class="card">
+                <div class="card__avatar">
+                    V
+            </div>
 
+            <div class="card__text">
+                <p>Vercel</p>
+                <h3>Full-stack Enginner </h3>
+                <span class="card__badge">R$20k - R$30k</span>
+                <span class="card__badge">Remoto</span>
+            </div>
+            <div class="card__actions">
+                <span>2h</span>
+                <a href="">candidatar-se</a>
+            </div>    
+        </div>
 
-<div>
-    <img src="" alt="logo">
-<p>Vercel</p> 
-Vercel
-<h3>Full-stack Engneer</h3>
-<span>R$20k - R$30k</span>
-<span>Remoto</span>
-<span>2h</span>
-<a href="">Candidarta-se</a>
-</div>
+        <div class="card">
+                <div class="card__avatar card__avatar--grey"> 
+                    V
+            </div>
 
+            <div class="card__text">
+                <p>Vercel</p>
+                <h3>Full-stack Enginner </h3>
+                <span class="card__badge">R$20k - R$30k</span>
+                <span class="card__badge">Remoto</span>
+            </div>
+            <div class="card__actions">
+                <span>2h</span>
+                <a href="">candidatar-se</a>
+            </div>    
+        </div>
 
-<div>
-    <img src="" alt="logo">
-<p>Vercel</p> 
-Vercel
-<h3>Full-stack Engneer</h3>
-<span>R$20k - R$30k</span>
-<span>Remoto</span>
-<span>2h</span>
-<a href="">Candidarta-se</a>
-</div>
-</main>
+        </main>
 
-<aside>
-    <div class="conteudo__header">   
+        <aside>
+            <div class="conteudo__header">
+                <h3>Filtros</h3>
+                <a href="">limpar</a>
+            </div>
 
+            <div class="conteudo__filter">
+                <p>Tipo de vaga</p>
+
+                <label for="ck-efetivo">
+                    <input type="checkbox" name="ck-efetivo" id="ck-efetivo"> Efetivo
+                </label>
+                <label for="ck-estagio">
+                    <input type="checkbox" name="ck-estagio" id="ck-estagio"> Estágio
+                </label>
+                <label for="ck-meio">
+                    <input type="checkbox" name="ck-meio" id="ck-meio"> Meio período
+                </label>
+            </div>
+            <div class="conteudo__filter">
+                <p>Área</p>
+
+                <label for="ck-engenharia">
+                    <input type="checkbox" name="ck-engenharia" id="ck-engenharia"> Engenharia
+                </label>
+                <label for="ck-design">
+                    <input type="checkbox" name="ck-design" id="ck-design"> Design
+                </label>
+                <label for="ck-gestao">
+                    <input type="checkbox" name="ck-gestao" id="ck-gestao"> Gestão
+                </label>
+            </div>
+            <div class="conteudo__filter">
+                <p>Localização</p>
+
+                <label for="ck-sp">
+                    <input type="checkbox" name="ck-sp" id="ck-sp"> São Paulo
+                </label>
+                <label for="ck-sc">
+                    <input type="checkbox" name="ck-sc" id="ck-sc"> Santa Catarina
+                </label>
+                <label for="ck-rs">
+                    <input type="checkbox" name="ck-rs" id="ck-rs"> Rio Grande do Sul
+                </label>
+            </div>
+        </aside>
     </div>
-    <h3>Filtros</h3>
-<a href="">limpar</a>
 
-<div class="conteudo__filter">
-    <p>Tipo de vaga</p>
 
-    <label for="ck-efetivo">
-        <input type="checkbox" name="ck-efetivo" id="ck-efetivo">Efetivo
-    </label>
 
-    <label for="ck-estagio">
-        <input type="checkbox" name="ck-estagio" id="ck-estagio">Estágio
-    </label>
+    <section class="hero">
+        <h2>Vagas novas, toda quinta-feira</h2>
+        <p>Um resumo curto das melhores vagas direto no seu inbox</p>
+        <form action="">
+            <input class="form__input" type="email" name="email" id="email" placeholder="seu@email.com">
+            <button class="btn" type="submit">Assinar</button>
+        </form>
+    </section>
+
+    <section class="hero">
+        <h2>Quem já usa o OpenBoard</h2>
+        <p>Depoimentos de recrutadores e candidadtos que já fecharam vaga por aqui.</p>
+
+        <div class="depoimentos">
+            <div>
+                <p>Encontrei minha vaga atual scrollando num sábado.Aplicação em dois cliques</p>
+                <span>Lucas Vergara</span>
+                <span>Software enginner - SATC</span>
+            </div>
     
-    <label for="ck-Meio periodo">
-        <input type="checkbox" name="ck-Meio periodo" id="ck-efetivo">Meio período
-    </label>
-</div>
-
-
-<div class="conteudo__filter">
-    <p>Área</p>
-
-    <label for="ck-Engenharia">
-        <input type="checkbox" name="ck-Engenharia" id="ck-Engenharia">Engenharia
-    </label>
-
-    <label for="ck-Design">
-        <input type="checkbox" name="ck-Design" id="ck-Design">Design
-    </label>
+            <div>
+                <p>Encontrei minha vaga atual scrollando num sábado.Aplicação em dois cliques</p>
+                <span>Lucas Vergara</span>
+                <span>Software enginner - SATC</span>
+            </div>
     
-    <label for="ck-Gestão">
-        <input type="checkbox" name="ck-Gestão" id="ck-Gestão">Gestão
-    </label>
-</div>
+            <div>
+                <p>Encontrei minha vaga atual scrollando num sábado.Aplicação em dois cliques</p>
+                <span>Lucas Vergara</span>
+                <span>Software enginner - SATC</span>
+            </div>
+        </div>
+
+    </section>
 
 
+    <footer>
+        <p>OpenBoard 2026 todos os direitos reservados</p>
 
-<div class="conteudo__filter">
-<p>ck-Localizacao</p>
+        <nav>
+            <a href="">Entrar</a>
+            <a href="">Publicar Vaga</a>
+            <a href="">Sobre</a>
+            <a href="">Privacidade</a>
+        </nav>
 
-    <label for="ck-sp">
-        <input type="checkbox" name="ck-sp" id="ck-sp">ck-sp
-    </label>
-
-    <label for="ck-rj">
-        <input type="checkbox" name="ck-rj" id="ck-rj">rj
-    </label>
-    
-    <label for="ck-sc">
-        <input type="checkbox" name="ck-sc" id="ck-sc">sc
-    </label>
-</div>
-
-</aside>
-</div>
+    </footer>
 
 
-
-<section>
-<h2> Vagas novas, toda quinta feira</h2>
-<p>Um resumo curto das melhores vagas direto no seu imbox</p>
-
-<form action="">
-    <input type="text" name="email" id="email" placeholder="seu@email.com">
-    <button type="submit">Assinar</button>
-</form>
-</section>
-  
-<section>
-<h2>Quem ja usa o OpenBoard</h2>
-<p>Depoimentos de recrutadores que ja fecharam vaga por aqui</p>
-
-<div>
-    <p>Melhor ROI de anuncio que ja tivemos para tec.Voltamos todo trimestre</p>
-    <span>Andre Lima</span>
-    <span>Founder - Retool BR</span>
-</div>
-
-
-<div>
-    <p>Encontrei minha vaga atual scrollando num sabado.Aplicação em dois cliques</p>
-    <span>Filipi dos santos</span>
-    <span>Software Engineer - Satc</span>
-</div>
-
-
-<div>
-    <p>Contratei duas designers em menos de uma semana. Formulario simples e publico</p>
-    <span>Marina Costa</span>
-    <span>Head of people - Vercel</span>
-</div>
-
-</section>    
-    
-<footer>
-    <p>OpenBoard 2026 todos os direitos reservados</p>
-
-<nav>
-    <a href="">Entrar</a>
-    <a href="">Publicar vaga</a>
-    <a href="">Sobre</a>
-    <a href="">Privacidade</a>
-</nav>
-</footer>
-    
-  
 </body>
+
 </html>

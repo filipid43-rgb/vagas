@@ -5,11 +5,16 @@
 }
 
 body{
- background-color: #fafaf9
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fafaf9;
 }
 
-header{
-  display: flex;
+header,
+footer{
+    display: flex;
     justify-content: space-between;
 
     padding: 16px 40px;
@@ -19,44 +24,43 @@ header{
 
 .btn{
     background-color: #111111;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
-
+    cursor: pointer;
 }
 
 .btn:hover{
     background-color: #333333;
-   
 }
 
 .cta{
-   padding: 24px 32px;
-   font-size: 18px;
-
+    padding: 24px 32px;
+    font-size: 18px;
 }
 
 .hero{
     text-align: center;
     padding: 100px 24px;
-
 }
+
 .hero h2{
     font-size: 48px;
     margin-bottom: 20px;
 }
 
 .hero p{
-   margin: 20px auto;
+    margin: 20px auto;
 }
 
 .conteudo{
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 40px ;
+
+    padding: 20px 40px;
 }
 
 .conteudo main{
@@ -67,7 +71,6 @@ header{
 .conteudo aside{
     width: 300px;
     padding: 8px;
- 
 }
 
 .conteudo__header{
@@ -77,17 +80,94 @@ header{
 }
 
 .conteudo__filter{
-   padding: 20px 0;
-   flex-direction: column;
-   display: flex;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
 }
 
 .conteudo__filter p{
-    padding: bottom: 16px;
+    padding-bottom: 16px;
     font-size: 12px;
     font-weight: bold;
 }
 
 .conteudo__filter label{
-   padding: 8px;
+    padding: 8px;
 }
+
+.form__input{
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #e5e5e3;
+    border-radius: 8px;
+}
+
+.depoimentos{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e3;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.card__avatar{
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 6%;
+}
+
+.card__avatar--grey{
+    background-color: #dddddd;
+    color: #333333;
+
+
+
+}
+
+.card__text{
+
+    padding: 16px 0;
+}
+
+.card__text{
+    flex-grow: 1;
+    padding: 0 16px;
+
+}
+
+.card__badge{
+  padding: 4px 8px;
+  background-color: #dddddd;
+  border-radius: 4px;
+  color: #666666;  
+}
+
+.card__title{
+    padding: 4px 0 16px 0;
+
+}
+
+.card__actions{
+    display-flex;
+    flex-direction: column;
+    align-items: end;
+
+
+}
+    
