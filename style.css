@@ -218,3 +218,10 @@ footer{
 
 
 }
+
+.alert{
+    display: none;
+    padding:6px;
+    background-color: red; 
+    border-radius: 6px;
+}

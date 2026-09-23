@@ -90,4 +90,27 @@ console.log(dividir(10, 2)); // 5
 const numeros = [1, 2, 3, 4, 5];
 numeros.forEach((numero) => {
     console.log(numero * 2);
+});
+
+const limpar = document.getElementById("btn-limpar");
+const filtros = document.getElementsByClassName("filtro");
+
+limpar.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    for (let i = 0; i < filtros.length; i++) {
+        filtros[i].checked = false;
+    }
+
+    showAlert('.alert');
+})
+
+function showAlert(el){
+    const divAlert = document.querySelector(el);
+    divAlert.style.display = 'block';
+
+    setTimeout(function() {
+        divAlert.style.display = 'none';
+    }, 3000);
 }
+
